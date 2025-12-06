@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Film - Sinematik Neon</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f0036, #001d3d);
+            color: #00d4ff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            text-shadow: 0 0 10px #00d4ff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-transform: capitalize;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #00d4ff;
+            width: 70%;
+            margin: 40px auto;
+            opacity: 0.5;
+        }
+
+        /* --- Animasi --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .film-card {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* --- Container Sutradara --- */
+        .section {
+            margin: 60px 30px;
+        }
+
+        .film-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* --- Card Film --- */
+        .film-card {
+            background: rgba(20, 20, 35, 0.9);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+            width: 300px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .film-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.5);
+        }
+
+        .film-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .film-card h2, .film-card h3 {
+            color: #00d4ff;
+            text-shadow: 0 0 8px #00d4ff;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #001d3d, #1f0036);
+            color: #9adcf5;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎬 Lobi Film Sinefil 🎬</h1>
+        <p>Film-Film Terbaik dari Sutradara Favorit</p>
+    </header>
+
+    <!-- Christopher Nolan Section -->
+    <div class="section">
+        <h1>Produksi Film Christopher Nolan</h1>
+        <div class="film-row">
+            <div class="film-card">
+                <h2>The Dark Knight (2008)</h2>
+                <img src="The Dark Knight.jpeg" alt="Poster The Dark Knight">
+                <p>Film superhero revolusioner yang disutradarai Christopher Nolan, menampilkan Christian Bale dan Heath Ledger dalam konflik moral yang epik.</p>
+            </div>
+
+            <div class="film-card">
+                <h3>Interstellar (2014)</h3>
+                <img src="Insterstellar.jpeg" alt="Poster Interstellar">
+                <p>Petualangan luar angkasa dengan visual menakjubkan dan emosi mendalam. Film ini menampilkan interpretasi ilmiah lubang hitam yang akurat.</p>
+            </div>
+
+            <div class="film-card">
+                <h3>Oppenheimer (2023)</h3>
+                <img src="Oppenheimer.jpeg" alt="Poster Oppenheimer">
+                <p>Kisah ilmuwan J. Robert Oppenheimer, diperankan Cillian Murphy. Menyajikan dilema moral di balik penciptaan bom atom dengan sinematografi IMAX yang megah.</p>
+            </div>
+
+            <div class="film-card">
+                <h3>The Prestige (2006)</h3>
+                <img src="The Prestige.jpeg" alt="Poster The Prestige">
+                <p>Dua pesulap abad ke-19 terjebak dalam rivalitas berbahaya. Nolan menggabungkan misteri, obsesi, dan twist mengejutkan yang melegenda.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- David Fincher Section -->
+    <div class="section">
+        <h1>Produksi Film David Fincher</h1>
+        <div class="film-row">
+            <div class="film-card">
+                <h2>Fight Club (1999)</h2>
+                <img src="FIght Club.jpeg" alt="Poster Fight Club">
+                <p>Kisah gila tentang identitas dan perlawanan terhadap konsumerisme modern, dengan Brad Pitt dan Edward Norton dalam peran tak terlupakan.</p>
+            </div>
+
+            <div class="film-card">
+                <h2>Gone Girl (2014)</h2>
+                <img src="Gone Girl.jpeg" alt="Poster Gone Girl">
+                <p>Film thriller psikologis dengan twist mengejutkan, menampilkan Ben Affleck dan Rosamund Pike dalam kisah pernikahan yang kelam.</p>
+            </div>
+
+            <div class="film-card">
+                <h2>Se7en (1995)</h2>
+                <img src="Se7en.jpeg" alt="Poster Se7en">
+                <p>Dua detektif memburu pembunuh berantai yang meniru tujuh dosa mematikan. Dibintangi Brad Pitt dan Morgan Freeman dengan akhir yang legendaris.</p>
+            </div>
+
+            <div class="film-card">
+                <h2>Zodiac (2007)</h2>
+                <img src="Zodiac.jpeg" alt="Poster Zodiac">
+                <p>Film investigasi berbasis kisah nyata pembunuh berantai Zodiac di San Francisco. Diperankan Jake Gyllenhaal, Robert Downey Jr., dan Mark Ruffalo.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Wishlist Section -->
+    <div class="section">
+        <h4>Film yang ingin saya tonton selanjutnya</h4>
+        <div class="film-row">
+            <div class="film-card">
+                <h5>The Odyssey (2026)</h5>
+                <img src="prototype-odyssey.jpg" alt="Poster The Odyssey">
+                <p>Film yang masih dalam produksi, diadaptasi dari kisah klasik perjalanan panjang dan penuh mitologi.</p>
+            </div>
+
+            <div class="film-card">
+                <h5>Avengers: Doomsday (2026)</h5>
+                <img src="prototype-doomsday.jpg" alt="Poster Avengers Doomsday">
+                <p>Kisah lanjutan epik dari MCU yang digadang-gadang menjadi akhir fase besar baru Marvel Studios.</p>
+            </div>
+
+            <div class="film-card">
+                <h6>The Bride (2026)</h6>
+                <img src="prototype-bride.jpg" alt="Poster The Bride">
+                <p>Film misteri baru yang menjanjikan tema kelam dan simbolisme psikologis yang kuat.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>✨ Website ini dikelola oleh Afliadi ✨</p>
+    </footer>
+</body>
+</html>
